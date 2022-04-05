@@ -1,0 +1,44 @@
+<div class="col-md-12">
+    <div class="card">
+  
+        <div class="card-header">
+            <img mat-card-avatar class="header-image" src="{{pokemonImg}}">
+            <div class="card-title">{{pokemon?.name}}</div>
+            <div  class="card-subtitle">Nº {{pokemon?.id}}</div>
+        </div>
+      
+        <img mat-card-image src="{{pokemonImg}}" alt="pokemon">
+      
+        <div class="card-body">
+            <div class="row">
+    
+                <div class="col-md-4 text-white">
+                    Type: {{pokemonType}}
+                </div>
+                <div class="col-md-4 text-white">
+                    Height: {{pokemon?.height}}
+                </div>
+    
+                <div class="col-md-4 text-white">
+                    Weight: {{pokemon?.weight}}
+                </div>
+    
+            </div>
+        </div>
+      
+    </div>
+    
+    <div class="absolute" style="
+    top: 5rem;
+    left: 20%;
+">
+        <button class="btn">
+            <a [routerLink]="['/pokemons']">
+                <span>
+                    <- REGRESAR
+                </span>
+            </a>
+        </button>
+    </div>
+
+</div>

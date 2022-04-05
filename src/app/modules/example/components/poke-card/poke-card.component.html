@@ -1,0 +1,63 @@
+
+<figure class="card card--normal pointer"
+
+    (click)="goDetailPokemon(pokemon.name)"
+>
+    <div class="card__image-container">
+        <img
+        async 
+        [src]="API_GITHUB_IMAGE + Id +'.png'"
+        alt="Eevee"
+        class="card__image"
+        />
+    </div>
+
+    <figcaption class="card__caption">
+        <h1 class="card__name">
+            {{ pokemon?.name }}
+        </h1>
+
+        <h3 class="card__type">normal</h3>
+
+        <table class="card__stats">
+            <tbody>
+                <tr>
+                    <th>HP</th>
+                    <td>55</td>
+                </tr>
+                <tr>
+                    <th>Attack</th>
+                    <td>55</td>
+                </tr>
+
+                <tr>
+                    <th>Defense</th>
+                    <td>50</td>
+                </tr>
+
+                <tr>
+                    <th>Special Attack</th>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <th>Special Defense</th>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <th>Speed</th>
+                    <td>55</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="card__abilities">
+            <h4 class="card__ability">
+                <span class="card__label">Ability</span>
+            </h4>
+            <h4 class="card__ability">
+                <span class="card__label">Hidden Ability</span>
+            </h4>
+        </div>
+    </figcaption>
+</figure>
+

@@ -1,0 +1,33 @@
+
+$red: #bd3736;
+$black: black;
+$white: #fcfcfc;
+$yellow: #FFD924;
+
+
+.card {
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: $red;
+}
+
+.header-image {
+    background-size: cover;
+}
+
+.card-header{
+    background-color: $white;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.card-title{
+    text-transform: uppercase;
+    color: $black;
+}
+
+.card-subtitle{
+    color: $black;
+}
+
